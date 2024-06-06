@@ -39,7 +39,6 @@ const serviceSchema = new Schema(
         type: String,
         required: [true, "Phone is required."],
         trim: true,
-        match: [/^\d{10,15}$/, "Please enter a valid phone number."],
       },
       email: {
         type: String,

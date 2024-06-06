@@ -38,7 +38,7 @@ router.post("/", async (request, response) => {
     }
     if (!request.body.location.city) {
       return response.status(400).send({
-        message: "website is required!",
+        message: "city is required!",
       });
     }
     if (!request.body.likes) {
@@ -133,7 +133,7 @@ router.put("/:id", async (request, response) => {
       }
       if (!request.body.location.city) {
         return response.status(400).send({
-          message: "website is required!",
+          message: "city is required!",
         });
       }
       if (!request.body.likes) {

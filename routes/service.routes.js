@@ -8,17 +8,12 @@ router.post("/", async (request, response) => {
     console.log(request.body);
     if (!request.body.providerName) {
       return response.status(400).send({
-        message: "productName is required!",
+        message: "providerName is required!",
       });
     }
     if (!request.body.serviceType) {
       return response.status(400).send({
-        message: "category is required!",
-      });
-    }
-    if (!request.body.brand) {
-      return response.status(400).send({
-        message: "brand is required!",
+        message: "serviceType is required!",
       });
     }
     if (!request.body.description) {
@@ -38,7 +33,22 @@ router.post("/", async (request, response) => {
     }
     if (!request.body.location.city) {
       return response.status(400).send({
-        message: "website is required!",
+        message: "city is required!",
+      });
+    }
+    if (!request.body.contact.phone) {
+      return response.status(400).send({
+        message: "phone is required!",
+      });
+    }
+    if (!request.body.contact.email) {
+      return response.status(400).send({
+        message: "email is required!",
+      });
+    }
+    if (!request.body.contact.socialMedia) {
+      return response.status(400).send({
+        message: "socialMedia is required!",
       });
     }
     if (!request.body.likes) {
@@ -47,20 +57,24 @@ router.post("/", async (request, response) => {
       });
     }
 
-    const newProduct = {
-      productName: request.body.productName,
-      category: request.body.category,
-      brand: request.body.brand,
+    const newService = {
+      providerName: request.body.providerName,
+      serviceType: request.body.serviceType,
       description: request.body.description,
       price: request.body.price,
       location: {
         address: request.body.location.address,
         city: request.body.location.city,
-      },     
+      },
+      contact: {
+        phone: request.body.contact.phone,
+        email: request.body.contact.email,
+        socialMedia: request.body.contact.socialMedia,
+      },
       likes: request.body.likes,
     };
 
-    const service = await Service.create(newProduct);
+    const service = await Service.create(newService);
     console.log(service);
 
     return response.status(201).send(service);
@@ -69,6 +83,10 @@ router.post("/", async (request, response) => {
     response.status(500).send({ message: error.message });
   }
 });
+
+
+
+// TODO 
 
 // // Get - Returns all the places
 // router.get("/", async (request, response) => {
