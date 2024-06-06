@@ -1,0 +1,498 @@
+[
+  {
+      "providerName": "Maria Babysitter",
+      "serviceType": "Babysitter",
+      "description": "Experienced babysitter available for evenings and weekends.",
+      "price": 15,
+      "location": {
+          "address": "Kurfürstendamm 27",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0301234567",
+          "email": "maria.babysitter@example.com",
+          "socialMedia": "http://facebook.com/mariababysitter"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Pedro Petsitter",
+      "serviceType": "Petsitter",
+      "description": "Reliable petsitting services for all types of pets.",
+      "price": 10,
+      "location": {
+          "address": "Alexanderplatz 5",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0307654321",
+          "email": "pedro.petsitter@example.com",
+          "socialMedia": "http://instagram.com/pedropetsitter"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Juliana's Beauty Salon",
+      "serviceType": "Salon",
+      "description": "Full-service beauty salon offering haircuts, styling, and more.",
+      "price": 30,
+      "location": {
+          "address": "Friedrichstraße 101",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309876543",
+          "email": "juliana.salon@example.com",
+          "socialMedia": "http://facebook.com/julianasalon"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Brazilian Food Catering",
+      "serviceType": "Food",
+      "description": "Authentic Brazilian catering services for events and parties.",
+      "price": 20,
+      "location": {
+          "address": "Prenzlauer Allee 212",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0305551234",
+          "email": "brazilian.food@example.com",
+          "socialMedia": "http://twitter.com/brazilianfoodcatering"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Gustavo's Personal Training",
+      "serviceType": "Fitness",
+      "description": "Personal training sessions tailored to your needs.",
+      "price": 50,
+      "location": {
+          "address": "Karl-Marx-Straße 89",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0302233445",
+          "email": "gustavo.trainer@example.com",
+          "socialMedia": "http://instagram.com/gustavotrainer"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Ana's House Cleaning",
+      "serviceType": "Cleaning",
+      "description": "Professional house cleaning services with flexible schedules.",
+      "price": 25,
+      "location": {
+          "address": "Eberswalder Straße 10",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0305566778",
+          "email": "ana.cleaning@example.com",
+          "socialMedia": "http://facebook.com/anacleaning"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Rafael's Car Repair",
+      "serviceType": "Automotive",
+      "description": "Expert car repair and maintenance services.",
+      "price": 60,
+      "location": {
+          "address": "Warschauer Straße 35",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988776",
+          "email": "rafael.carrepair@example.com",
+          "socialMedia": "http://twitter.com/rafaelcarrepair"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Lara's Tutoring",
+      "serviceType": "Education",
+      "description": "Private tutoring for students of all ages.",
+      "price": 20,
+      "location": {
+          "address": "Kottbusser Damm 95",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0301122334",
+          "email": "lara.tutoring@example.com",
+          "socialMedia": "http://facebook.com/laratutoring"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Flavia's Photography",
+      "serviceType": "Photography",
+      "description": "Professional photography services for events and portraits.",
+      "price": 100,
+      "location": {
+          "address": "Berliner Straße 18",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0304433221",
+          "email": "flavia.photography@example.com",
+          "socialMedia": "http://instagram.com/flaviaphotography"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Vinicius Web Design",
+      "serviceType": "IT",
+      "description": "Custom web design and development services.",
+      "price": 200,
+      "location": {
+          "address": "Leipziger Straße 20",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0305544332",
+          "email": "vinicius.webdesign@example.com",
+          "socialMedia": "http://twitter.com/viniciuswebdesign"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Camila's Yoga Classes",
+      "serviceType": "Fitness",
+      "description": "Group and private yoga classes for all levels.",
+      "price": 30,
+      "location": {
+          "address": "Frankfurter Allee 55",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0306677889",
+          "email": "camila.yoga@example.com",
+          "socialMedia": "http://instagram.com/camilayoga"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Marcos Electrician",
+      "serviceType": "Handyman",
+      "description": "Certified electrician for all your electrical needs.",
+      "price": 40,
+      "location": {
+          "address": "Oranienstraße 45",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988997",
+          "email": "marcos.electrician@example.com",
+          "socialMedia": "http://facebook.com/marcoselectrician"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Tatiana's Massage Therapy",
+      "serviceType": "Wellness",
+      "description": "Relaxing massage therapy sessions.",
+      "price": 60,
+      "location": {
+          "address": "Schönhauser Allee 130",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0307766554",
+          "email": "tatiana.massage@example.com",
+          "socialMedia": "http://instagram.com/tatianamassage"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Felipe's Guitar Lessons",
+      "serviceType": "Music",
+      "description": "Private guitar lessons for beginners and advanced players.",
+      "price": 25,
+      "location": {
+          "address": "Kurfürstenstraße 60",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0302211998",
+          "email": "felipe.guitar@example.com",
+          "socialMedia": "http://facebook.com/felipeguitar"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Gabriela's Language School",
+      "serviceType": "Education",
+      "description": "Language classes for Portuguese and English.",
+      "price": 35,
+      "location": {
+          "address": "Brunnenstraße 50",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0308844332",
+          "email": "gabriela.languages@example.com",
+          "socialMedia": "http://twitter.com/gabrielalanguages"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Andre's Painting Services",
+      "serviceType": "Handyman",
+      "description": "Professional painting services for homes and offices.",
+      "price": 45,
+      "location": {
+          "address": "Danziger Straße 123",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0306655443",
+          "email": "andre.painting@example.com",
+          "socialMedia": "http://instagram.com/andrepainting"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Julia's Event Planning",
+      "serviceType": "Event Planning",
+      "description": "Comprehensive event planning and coordination services.",
+      "price": 150,
+      "location": {
+          "address": "Rosa-Luxemburg-Straße 78",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0305544336",
+          "email": "julia.eventplanning@example.com",
+          "socialMedia": "http://facebook.com/juliaeventplanning"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Renato's Plumbing Services",
+      "serviceType": "Handyman",
+      "description": "Reliable plumbing services for homes and businesses.",
+      "price": 35,
+      "location": {
+          "address": "Steglitzer Damm 35",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988774",
+          "email": "renato.plumbing@example.com",
+          "socialMedia": "http://twitter.com/renatoplumbing"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Isabela's Baking Classes",
+      "serviceType": "Education",
+      "description": "Baking classes for all skill levels.",
+      "price": 50,
+      "location": {
+          "address": "Karl-Liebknecht-Straße 40",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0303344556",
+          "email": "isabela.baking@example.com",
+          "socialMedia": "http://instagram.com/isabelabaking"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Rosa's Tailoring",
+      "serviceType": "Tailoring",
+      "description": "Expert tailoring and alteration services.",
+      "price": 20,
+      "location": {
+          "address": "Kurfürstendamm 29",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988221",
+          "email": "rosa.tailoring@example.com",
+          "socialMedia": "http://facebook.com/rosatailoring"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Miguel's Carpentry",
+      "serviceType": "Handyman",
+      "description": "Custom carpentry and woodwork services.",
+      "price": 50,
+      "location": {
+          "address": "Alexanderplatz 6",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0307766555",
+          "email": "miguel.carpentry@example.com",
+          "socialMedia": "http://instagram.com/miguelcarpentry"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Bianca's Makeup Artistry",
+      "serviceType": "Beauty",
+      "description": "Professional makeup services for events and photoshoots.",
+      "price": 40,
+      "location": {
+          "address": "Friedrichstraße 102",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0308877666",
+          "email": "bianca.makeup@example.com",
+          "socialMedia": "http://facebook.com/biancamakeup"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Carlos's IT Support",
+      "serviceType": "IT",
+      "description": "IT support and consulting services for businesses.",
+      "price": 100,
+      "location": {
+          "address": "Prenzlauer Allee 213",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0302233555",
+          "email": "carlos.itsupport@example.com",
+          "socialMedia": "http://twitter.com/carlositsupport"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Claudia's Sewing Classes",
+      "serviceType": "Education",
+      "description": "Sewing classes for beginners and advanced students.",
+      "price": 25,
+      "location": {
+          "address": "Kurfürstendamm 28",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0306677880",
+          "email": "claudia.sewing@example.com",
+          "socialMedia": "http://facebook.com/claudiasewing"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Mariana's Nutrition Coaching",
+      "serviceType": "Wellness",
+      "description": "Personalized nutrition coaching and meal planning.",
+      "price": 80,
+      "location": {
+          "address": "Alexanderplatz 7",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0308877667",
+          "email": "mariana.nutrition@example.com",
+          "socialMedia": "http://instagram.com/mariananutrition"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Henrique's Driving School",
+      "serviceType": "Education",
+      "description": "Driving lessons for new and experienced drivers.",
+      "price": 60,
+      "location": {
+          "address": "Friedrichstraße 103",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988222",
+          "email": "henrique.drivingschool@example.com",
+          "socialMedia": "http://twitter.com/henriquedriving"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Fabio's Music Production",
+      "serviceType": "Music",
+      "description": "Music production and recording services.",
+      "price": 120,
+      "location": {
+          "address": "Prenzlauer Allee 214",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988775",
+          "email": "fabio.music@example.com",
+          "socialMedia": "http://facebook.com/fabiomusic"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Fernanda's Dance Classes",
+      "serviceType": "Fitness",
+      "description": "Dance classes for all ages and skill levels.",
+      "price": 20,
+      "location": {
+          "address": "Kurfürstendamm 30",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0306655444",
+          "email": "fernanda.dance@example.com",
+          "socialMedia": "http://instagram.com/fernandadance"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "João's Landscaping",
+      "serviceType": "Handyman",
+      "description": "Landscaping and gardening services for your home.",
+      "price": 40,
+      "location": {
+          "address": "Alexanderplatz 8",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0306677881",
+          "email": "joao.landscaping@example.com",
+          "socialMedia": "http://facebook.com/joaolandscaping"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Patricia's Travel Agency",
+      "serviceType": "Travel",
+      "description": "Personalized travel planning and booking services.",
+      "price": 100,
+      "location": {
+          "address": "Friedrichstraße 104",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0309988223",
+          "email": "patricia.travel@example.com",
+          "socialMedia": "http://twitter.com/patriciatravel"
+      },
+      "likes": []
+  },
+  {
+      "providerName": "Lucia's Dog Training",
+      "serviceType": "Pets",
+      "description": "Professional dog training services for all breeds.",
+      "price": 50,
+      "location": {
+          "address": "Prenzlauer Allee 215",
+          "city": "Berlin"
+      },
+      "contact": {
+          "phone": "0307766556",
+          "email": "lucia.dogtraining@example.com",
+          "socialMedia": "http://instagram.com/luciadogtraining"
+      },
+      "likes": []
+  }
+]

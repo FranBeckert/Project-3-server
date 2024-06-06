@@ -1,0 +1,61 @@
+const { Schema, model } = require("mongoose");
+
+const userSchema = new Schema(
+  {
+    name: {
+      type: String,
+      required: [true, "Name is required."],
+      trim: true
+    },
+    email: {
+      type: String,
+      required: [true, "Email is required."],
+      unique: true,
+      trim: true,
+      match: [
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        "Please fill a valid email address",
+      ],
+    },
+    password: {
+      type: String,
+      required: [true, "Password is required."],
+      trim: true
+    },
+    profilePicture: String,
+
+    dateOfBirth: {
+      type: Date,
+      required: [true, "Date of Birth is required."],
+    },
+
+    neighborhood: {
+      type: String,
+      required: [true, "Neighborhood is required."],
+    },
+
+    interests: [String],
+
+    // 3 different favorites
+
+    favorites: [
+      {
+        itemId: { type: Schema.Types.ObjectId, refPath: "favorites.itemType" },
+        itemType: {
+          type: String,
+          required: true,
+          enum: ["Place", "Service", "Product"],
+        },
+      },
+    ],
+  },
+
+  {
+    // this second object adds extra properties: `createdAt` and `updatedAt`
+    timestamps: true,
+  }
+);
+
+const User = model("User", userSchema);
+
+module.exports = User;

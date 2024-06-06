@@ -1,0 +1,244 @@
+[
+  {
+    "productName": "Pantene Shampoo",
+    "category": "Hair Products",
+    "brand": "Pantene",
+    "description": "A nourishing shampoo for all hair types.",
+    "price": 5.99,
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Natura Face Cream",
+    "category": "Skin Care",
+    "brand": "Natura",
+    "description": "A hydrating face cream with natural ingredients.",
+    "price": 19.99,
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Ypê Cleaning Supplies",
+    "category": "Cleaning Supplies",
+    "brand": "Ypê",
+    "description": "Eco-friendly cleaning supplies for your home.",
+    "price": 10.49,
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Pão de Queijo Mix",
+    "category": "Food",
+    "brand": "Yoki",
+    "description": "Traditional Brazilian cheese bread mix.",
+    "price": 4.99,
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Samsung TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "description": "A 50-inch 4K UHD Smart TV.",
+    "price": 499.99,
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Natura Hand Cream",
+    "category": "Skin Care",
+    "brand": "Natura",
+    "description": "Moisturizing hand cream with natural oils.",
+    "price": 7.99,
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Havaianas Flip Flops",
+    "category": "Footwear",
+    "brand": "Havaianas",
+    "description": "Comfortable flip flops for everyday wear.",
+    "price": 14.99,
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Bauducco Panettone",
+    "category": "Food",
+    "brand": "Bauducco",
+    "description": "Delicious traditional Brazilian panettone.",
+    "price": 6.99,
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Embratel SIM Card",
+    "category": "Electronics",
+    "brand": "Embratel",
+    "description": "Prepaid SIM card for international calls.",
+    "price": 15.00,
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Guaraná Antarctica",
+    "category": "Beverages",
+    "brand": "Antarctica",
+    "description": "Popular Brazilian guaraná soda.",
+    "price": 1.49,
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Cachaça 51",
+    "category": "Beverages",
+    "brand": "Cachaça 51",
+    "description": "Traditional Brazilian cachaça for cocktails.",
+    "price": 19.99,
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philco Blender",
+    "category": "Kitchen Appliances",
+    "brand": "Philco",
+    "description": "High-performance blender for smoothies and more.",
+    "price": 49.99,
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Nescau Chocolate Powder",
+    "category": "Food",
+    "brand": "Nestlé",
+    "description": "Brazilian chocolate powder for milk drinks.",
+    "price": 4.50,
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Bombril Steel Wool",
+    "category": "Cleaning Supplies",
+    "brand": "Bombril",
+    "description": "Steel wool for cleaning and scrubbing.",
+    "price": 2.99,
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Tramontina Knife Set",
+    "category": "Kitchen Supplies",
+    "brand": "Tramontina",
+    "description": "High-quality Brazilian knife set.",
+    "price": 39.99,
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Mococa Condensed Milk",
+    "category": "Food",
+    "brand": "Mococa",
+    "description": "Sweetened condensed milk for desserts.",
+    "price": 3.20,
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Melissa Shoes",
+    "category": "Footwear",
+    "brand": "Melissa",
+    "description": "Stylish and comfortable plastic shoes.",
+    "price": 49.00,
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Sundown Sunscreen",
+    "category": "Skin Care",
+    "brand": "Sundown",
+    "description": "High SPF sunscreen for sun protection.",
+    "price": 12.99,
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Pilão Coffee",
+    "category": "Food",
+    "brand": "Pilão",
+    "description": "Strong and flavorful Brazilian coffee.",
+    "price": 8.99,
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "DeMillus Lingerie",
+    "category": "Clothing",
+    "brand": "DeMillus",
+    "description": "Comfortable and stylish Brazilian lingerie.",
+    "price": 25.00,
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  }
+]
+
+  
