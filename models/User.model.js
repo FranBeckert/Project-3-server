@@ -5,7 +5,7 @@ const userSchema = new Schema(
     name: {
       type: String,
       required: [true, "Name is required."],
-      trim: true
+      trim: true,
     },
     email: {
       type: String,
@@ -20,7 +20,7 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: [true, "Password is required."],
-      trim: true
+      trim: true,
     },
     profilePicture: String,
 
@@ -36,18 +36,11 @@ const userSchema = new Schema(
 
     interests: [String],
 
-    // 3 different favorites
+    // 3 different favorites FIXME
 
-    favorites: [
-      {
-        itemId: { type: Schema.Types.ObjectId, refPath: "favorites.itemType" },
-        itemType: {
-          type: String,
-          required: true,
-          enum: ["Place", "Service", "Product"],
-        },
-      },
-    ],
+    favoritePlaces: { type: Schema.Types.ObjectId, ref: "Place" },
+    favoriteServices: { type: Schema.Types.ObjectId, ref: "Service" },
+    favoritesProduct: { type: Schema.Types.ObjectId, ref: "Product" },
   },
 
   {

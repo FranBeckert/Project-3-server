@@ -31,6 +31,11 @@ router.post("/", async (request, response) => {
         message: "price is required!",
       });
     }
+    if (!request.body.location.storeName) {
+      return response.status(400).send({
+        message: "address is required!",
+      });
+    }
     if (!request.body.location.address) {
       return response.status(400).send({
         message: "address is required!",
@@ -54,6 +59,7 @@ router.post("/", async (request, response) => {
       description: request.body.description,
       price: request.body.price,
       location: {
+        storeName: request.body.location.storeName,
         address: request.body.location.address,
         city: request.body.location.city,
       },     
@@ -124,6 +130,11 @@ router.put("/:id", async (request, response) => {
       if (!request.body.price) {
         return response.status(400).send({
           message: "price is required!",
+        });
+      }
+      if (!request.body.location.storeName) {
+        return response.status(400).send({
+          message: "address is required!",
         });
       }
       if (!request.body.location.address) {

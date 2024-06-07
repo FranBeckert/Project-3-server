@@ -16,6 +16,15 @@ router.post("/", async (request, response) => {
         message: "placeType is required!",
       });
     }
+    
+    if (request.body.placeType ==="Doctor" || request.body.placeType ==="Veterinarian" || request.body.placeType ==="Dentist") {
+      if (!request.body.speciality) {
+        return response.status(400).send({
+          message: "speciality is required!",
+        });
+      }
+    }
+
     if (!request.body.location.address) {
       return response.status(400).send({
         message: "address is required!",
@@ -51,6 +60,7 @@ router.post("/", async (request, response) => {
     const newPlace = {
       placeName: request.body.placeName,
       placeType: request.body.placeType,
+      speciality: request.body.speciality,
       location: {
         address: request.body.location.address,
         city: request.body.location.city,
@@ -114,6 +124,15 @@ router.put("/:id", async (request, response) => {
         message: "placeType is required!",
       });
     }
+    
+    if (request.body.placeType ==="Doctor" || request.body.placeType ==="Veterinarian" || request.body.placeType ==="Dentist") {
+      if (!request.body.speciality) {
+        return response.status(400).send({
+          message: "speciality is required!",
+        });
+      }
+    }
+
     if (!request.body.location.address) {
       return response.status(400).send({
         message: "address is required!",

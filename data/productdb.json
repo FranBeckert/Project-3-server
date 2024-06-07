@@ -6,6 +6,7 @@
     "description": "A nourishing shampoo for all hair types.",
     "price": 5.99,
     "location": {
+      "storeName": "Beauty Store",
       "address": "Kurfürstendamm 27",
       "city": "Berlin"
     },
@@ -18,6 +19,7 @@
     "description": "A hydrating face cream with natural ingredients.",
     "price": 19.99,
     "location": {
+      "storeName": "Health & Beauty",
       "address": "Alexanderplatz 5",
       "city": "Berlin"
     },
@@ -30,6 +32,7 @@
     "description": "Eco-friendly cleaning supplies for your home.",
     "price": 10.49,
     "location": {
+      "storeName": "Household Essentials",
       "address": "Friedrichstraße 101",
       "city": "Berlin"
     },
@@ -42,6 +45,7 @@
     "description": "Traditional Brazilian cheese bread mix.",
     "price": 4.99,
     "location": {
+      "storeName": "Brazilian Delights",
       "address": "Prenzlauer Allee 212",
       "city": "Berlin"
     },
@@ -54,30 +58,20 @@
     "description": "A 50-inch 4K UHD Smart TV.",
     "price": 499.99,
     "location": {
+      "storeName": "Tech World",
       "address": "Kurfürstendamm 27",
       "city": "Berlin"
     },
     "likes": []
   },
   {
-    "productName": "Natura Hand Cream",
-    "category": "Skin Care",
-    "brand": "Natura",
-    "description": "Moisturizing hand cream with natural oils.",
-    "price": 7.99,
-    "location": {
-      "address": "Alexanderplatz 5",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
     "productName": "Havaianas Flip Flops",
-    "category": "Footwear",
+    "category": "Clothing",
     "brand": "Havaianas",
     "description": "Comfortable flip flops for everyday wear.",
     "price": 14.99,
     "location": {
+      "storeName": "Footwear Hub",
       "address": "Friedrichstraße 101",
       "city": "Berlin"
     },
@@ -90,54 +84,7 @@
     "description": "Delicious traditional Brazilian panettone.",
     "price": 6.99,
     "location": {
-      "address": "Prenzlauer Allee 212",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Embratel SIM Card",
-    "category": "Electronics",
-    "brand": "Embratel",
-    "description": "Prepaid SIM card for international calls.",
-    "price": 15.00,
-    "location": {
-      "address": "Kurfürstendamm 27",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Guaraná Antarctica",
-    "category": "Beverages",
-    "brand": "Antarctica",
-    "description": "Popular Brazilian guaraná soda.",
-    "price": 1.49,
-    "location": {
-      "address": "Alexanderplatz 5",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Cachaça 51",
-    "category": "Beverages",
-    "brand": "Cachaça 51",
-    "description": "Traditional Brazilian cachaça for cocktails.",
-    "price": 19.99,
-    "location": {
-      "address": "Friedrichstraße 101",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Philco Blender",
-    "category": "Kitchen Appliances",
-    "brand": "Philco",
-    "description": "High-performance blender for smoothies and more.",
-    "price": 49.99,
-    "location": {
+      "storeName": "Sweet Treats",
       "address": "Prenzlauer Allee 212",
       "city": "Berlin"
     },
@@ -150,6 +97,7 @@
     "description": "Brazilian chocolate powder for milk drinks.",
     "price": 4.50,
     "location": {
+      "storeName": "Brazilian Market",
       "address": "Kurfürstendamm 27",
       "city": "Berlin"
     },
@@ -162,6 +110,7 @@
     "description": "Steel wool for cleaning and scrubbing.",
     "price": 2.99,
     "location": {
+      "storeName": "Cleaning Essentials",
       "address": "Alexanderplatz 5",
       "city": "Berlin"
     },
@@ -169,76 +118,652 @@
   },
   {
     "productName": "Tramontina Knife Set",
-    "category": "Kitchen Supplies",
+    "category": "Other",
     "brand": "Tramontina",
     "description": "High-quality Brazilian knife set.",
     "price": 39.99,
     "location": {
+      "storeName": "Kitchenware Store",
       "address": "Friedrichstraße 101",
       "city": "Berlin"
     },
     "likes": []
   },
   {
-    "productName": "Mococa Condensed Milk",
-    "category": "Food",
-    "brand": "Mococa",
-    "description": "Sweetened condensed milk for desserts.",
-    "price": 3.20,
-    "location": {
-      "address": "Prenzlauer Allee 212",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Melissa Shoes",
-    "category": "Footwear",
-    "brand": "Melissa",
-    "description": "Stylish and comfortable plastic shoes.",
-    "price": 49.00,
-    "location": {
-      "address": "Kurfürstendamm 27",
-      "city": "Berlin"
-    },
-    "likes": []
-  },
-  {
-    "productName": "Sundown Sunscreen",
+    "productName": "Granado Hand Cream",
     "category": "Skin Care",
-    "brand": "Sundown",
-    "description": "High SPF sunscreen for sun protection.",
-    "price": 12.99,
+    "brand": "Granado",
+    "description": "Moisturizing hand cream with a pleasant fragrance.",
+    "price": 9.99,
     "location": {
+      "storeName": "Beauty Store",
       "address": "Alexanderplatz 5",
       "city": "Berlin"
     },
     "likes": []
   },
   {
-    "productName": "Pilão Coffee",
-    "category": "Food",
-    "brand": "Pilão",
-    "description": "Strong and flavorful Brazilian coffee.",
-    "price": 8.99,
+    "productName": "Philips Hair Dryer",
+    "category": "Hair Products",
+    "brand": "Philips",
+    "description": "Professional hair dryer with multiple settings.",
+    "price": 49.99,
     "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Garnier Fructis Conditioner",
+    "category": "Hair Products",
+    "brand": "Garnier",
+    "description": "Strengthening conditioner for damaged hair.",
+    "price": 6.49,
+    "location": {
+      "storeName": "Beauty Store",
       "address": "Friedrichstraße 101",
       "city": "Berlin"
     },
     "likes": []
   },
   {
-    "productName": "DeMillus Lingerie",
-    "category": "Clothing",
-    "brand": "DeMillus",
-    "description": "Comfortable and stylish Brazilian lingerie.",
-    "price": 25.00,
+    "productName": "Itambé Milk Powder",
+    "category": "Food",
+    "brand": "Itambé",
+    "description": "Instant milk powder for various uses.",
+    "price": 7.99,
     "location": {
+      "storeName": "Brazilian Delights",
       "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philco Blender",
+    "category": "Electronics",
+    "brand": "Philco",
+    "description": "High-power blender for smoothies and more.",
+    "price": 59.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Melissa Sandals",
+    "category": "Clothing",
+    "brand": "Melissa",
+    "description": "Stylish and comfortable sandals for women.",
+    "price": 24.99,
+    "location": {
+      "storeName": "Footwear Hub",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Seda Hair Gel",
+    "category": "Hair Products",
+    "brand": "Seda",
+    "description": "Strong hold hair gel for all styles.",
+    "price": 4.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Monange Body Lotion",
+    "category": "Skin Care",
+    "brand": "Monange",
+    "description": "Hydrating body lotion with a fresh scent.",
+    "price": 8.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Electric Shaver",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "Electric shaver with precision blades.",
+    "price": 89.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Oster Blender",
+    "category": "Electronics",
+    "brand": "Oster",
+    "description": "Durable blender with multiple speed settings.",
+    "price": 79.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Bombril Cleaning Cloth",
+    "category": "Cleaning Supplies",
+    "brand": "Bombril",
+    "description": "High-quality cleaning cloth for various surfaces.",
+    "price": 3.49,
+    "location": {
+      "storeName": "Cleaning Essentials",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Itambé Condensed Milk",
+    "category": "Food",
+    "brand": "Itambé",
+    "description": "Sweet condensed milk for desserts.",
+    "price": 2.99,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philco Hair Straightener",
+    "category": "Hair Products",
+    "brand": "Philco",
+    "description": "Professional hair straightener with ceramic plates.",
+    "price": 29.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Tramontina Cookware Set",
+    "category": "Other",
+    "brand": "Tramontina",
+    "description": "High-quality cookware set for your kitchen.",
+    "price": 99.99,
+    "location": {
+      "storeName": "Kitchenware Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Granado Soap",
+    "category": "Skin Care",
+    "brand": "Granado",
+    "description": "Natural soap with a pleasant fragrance.",
+    "price": 3.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Havaianas Slides",
+    "category": "Clothing",
+    "brand": "Havaianas",
+    "description": "Comfortable slides for everyday wear.",
+    "price": 19.99,
+    "location": {
+      "storeName": "Footwear Hub",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Seda Shampoo",
+    "category": "Hair Products",
+    "brand": "Seda",
+    "description": "Strengthening shampoo for damaged hair.",
+    "price": 5.49,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Monange Shower Gel",
+    "category": "Skin Care",
+    "brand": "Monange",
+    "description": "Refreshing shower gel with moisturizing properties.",
+    "price": 7.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Samsung Galaxy Phone",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "description": "Latest Samsung Galaxy smartphone with advanced features.",
+    "price": 799.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Juicer",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "High-efficiency juicer for fresh juices.",
+    "price": 69.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Bombril Sponge",
+    "category": "Cleaning Supplies",
+    "brand": "Bombril",
+    "description": "Durable sponge for cleaning dishes.",
+    "price": 1.99,
+    "location": {
+      "storeName": "Cleaning Essentials",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Yoki Tapioca Flour",
+    "category": "Food",
+    "brand": "Yoki",
+    "description": "Tapioca flour for Brazilian dishes.",
+    "price": 3.99,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Tramontina Knife Set",
+    "category": "Other",
+    "brand": "Tramontina",
+    "description": "High-quality Brazilian knife set.",
+    "price": 39.99,
+    "location": {
+      "storeName": "Kitchenware Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Granado Foot Cream",
+    "category": "Skin Care",
+    "brand": "Granado",
+    "description": "Moisturizing foot cream for soft feet.",
+    "price": 8.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philco Microwave",
+    "category": "Electronics",
+    "brand": "Philco",
+    "description": "Compact microwave with various settings.",
+    "price": 99.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Garnier Fructis Shampoo",
+    "category": "Hair Products",
+    "brand": "Garnier",
+    "description": "Nourishing shampoo for healthy hair.",
+    "price": 6.49,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Itambé Butter",
+    "category": "Food",
+    "brand": "Itambé",
+    "description": "Creamy butter for spreading and cooking.",
+    "price": 4.99,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Coffee Maker",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "Programmable coffee maker for perfect coffee.",
+    "price": 129.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Havaianas Sneakers",
+    "category": "Clothing",
+    "brand": "Havaianas",
+    "description": "Comfortable sneakers for casual wear.",
+    "price": 34.99,
+    "location": {
+      "storeName": "Footwear Hub",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Monange Hand Cream",
+    "category": "Skin Care",
+    "brand": "Monange",
+    "description": "Moisturizing hand cream with a light fragrance.",
+    "price": 4.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Samsung Soundbar",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "description": "High-quality soundbar for enhanced audio experience.",
+    "price": 149.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philco Toaster",
+    "category": "Electronics",
+    "brand": "Philco",
+    "description": "Stylish toaster with multiple settings.",
+    "price": 29.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Garnier Fructis Hair Mask",
+    "category": "Hair Products",
+    "brand": "Garnier",
+    "description": "Deep conditioning hair mask for damaged hair.",
+    "price": 7.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Itambé Evaporated Milk",
+    "category": "Food",
+    "brand": "Itambé",
+    "description": "Rich evaporated milk for cooking and baking.",
+    "price": 2.49,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Tramontina Cooking Utensils",
+    "category": "Other",
+    "brand": "Tramontina",
+    "description": "Durable cooking utensils for your kitchen.",
+    "price": 24.99,
+    "location": {
+      "storeName": "Kitchenware Store",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Granado Lip Balm",
+    "category": "Skin Care",
+    "brand": "Granado",
+    "description": "Nourishing lip balm with a pleasant scent.",
+    "price": 5.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Rice Cooker",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "Efficient rice cooker with multiple settings.",
+    "price": 49.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Seda Hair Spray",
+    "category": "Hair Products",
+    "brand": "Seda",
+    "description": "Strong hold hair spray for all styles.",
+    "price": 5.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Havaianas Beach Towel",
+    "category": "Clothing",
+    "brand": "Havaianas",
+    "description": "Soft and absorbent beach towel.",
+    "price": 19.99,
+    "location": {
+      "storeName": "Footwear Hub",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Monange Body Butter",
+    "category": "Skin Care",
+    "brand": "Monange",
+    "description": "Rich body butter for deep hydration.",
+    "price": 9.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Samsung Smartwatch",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "description": "Advanced smartwatch with fitness tracking.",
+    "price": 199.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Air Fryer",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "Healthy air fryer for crispy meals.",
+    "price": 99.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Garnier Fructis Hair Oil",
+    "category": "Hair Products",
+    "brand": "Garnier",
+    "description": "Nourishing hair oil for smooth and shiny hair.",
+    "price": 8.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Itambé Cream Cheese",
+    "category": "Food",
+    "brand": "Itambé",
+    "description": "Creamy cheese for spreading and cooking.",
+    "price": 3.99,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Tramontina Cutting Board",
+    "category": "Other",
+    "brand": "Tramontina",
+    "description": "Durable cutting board for your kitchen.",
+    "price": 14.99,
+    "location": {
+      "storeName": "Kitchenware Store",
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Granado Body Wash",
+    "category": "Skin Care",
+    "brand": "Granado",
+    "description": "Gentle body wash with natural ingredients.",
+    "price": 7.99,
+    "location": {
+      "storeName": "Beauty Store",
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Philips Electric Kettle",
+    "category": "Electronics",
+    "brand": "Philips",
+    "description": "Fast boiling electric kettle.",
+    "price": 39.99,
+    "location": {
+      "storeName": "Tech World",
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Bombril Dish Soap",
+    "category": "Cleaning Supplies",
+    "brand": "Bombril",
+    "description": "Effective dish soap for clean dishes.",
+    "price": 2.49,
+    "location": {
+      "storeName": "Cleaning Essentials",
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "likes": []
+  },
+  {
+    "productName": "Yoki Cornmeal",
+    "category": "Food",
+    "brand": "Yoki",
+    "description": "Cornmeal for various Brazilian dishes.",
+    "price": 3.49,
+    "location": {
+      "storeName": "Brazilian Delights",
+      "address": "Friedrichstraße 101",
       "city": "Berlin"
     },
     "likes": []
   }
 ]
-
-  

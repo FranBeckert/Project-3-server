@@ -10,7 +10,7 @@ const serviceSchema = new Schema(
     serviceType: {
       type: String,
       required: [true, "Service is required."],
-      enum: ["Babysitter", "Petsitter", "Salon", "Food", "Other"],
+      enum: ["Babysitter", "Petsitter", "Salon", "Food", "Education", "Other"],
     },
     description: {
       type: String,

@@ -16,267 +16,881 @@
   {
     "placeName": "Casa do Açaí",
     "placeType": "Restaurant",
-      "location": {
-          "address": "Prenzlauer Allee 212",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0307654321",
-          "email": "info@casadoacai.com",
-          "website": "http://www.casadoacai.com"
-      },
-      "likes": []
+    "location": {
+      "address": "Prenzlauer Allee 212",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0307654321",
+      "email": "info@casadoacai.com",
+      "website": "http://www.casadoacai.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Brazilian Market Berlin",
-      "placeType": "Supermarket",
-      "location": {
-          "address": "Friedrichstraße 101",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0309876543",
-          "email": "info@brazilianmarketberlin.com",
-          "website": "http://www.brazilianmarketberlin.com"
-      },
-      "likes": []
+    "placeName": "Brazilian Market Berlin",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@brazilianmarketberlin.com",
+      "website": "http://www.brazilianmarketberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Samba Studio",
-      "placeType": "Other",
-      "location": {
-          "address": "Alexanderplatz 5",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0305551234",
-          "email": "contact@sambastudioberlin.com",
-          "website": "http://www.sambastudioberlin.com"
-      },
-      "likes": []
+    "placeName": "Samba Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305551234",
+      "email": "contact@sambastudioberlin.com",
+      "website": "http://www.sambastudioberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Dr. Silva's Clinic",
-      "placeType": "Doctor",
-      "location": {
-          "address": "Müllerstraße 23",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0303334567",
-          "email": "appointment@drsilvaberlin.com",
-          "website": "http://www.drsilvaberlin.com"
-      },
-      "likes": []
+    "placeName": "Dr. Silva's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Cardiology",
+    "location": {
+      "address": "Müllerstraße 23",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303334567",
+      "email": "appointment@drsilvaberlin.com",
+      "website": "http://www.drsilvaberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Rio Lounge",
-      "placeType": "Bar",
-      "location": {
-          "address": "Karl-Marx-Straße 89",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0302233445",
-          "email": "info@riolounge.com",
-          "website": "http://www.riolounge.com"
-      },
-      "likes": []
+    "placeName": "Dr. Costa's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Dermatology",
+    "location": {
+      "address": "Potsdamer Platz 3",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303210987",
+      "email": "appointments@drcostaberlin.com",
+      "website": "http://www.drcostaberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Tropical Dance Studio",
-      "placeType": "Dance Studio",
-      "location": {
-          "address": "Eberswalder Straße 10",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0305566778",
-          "email": "contact@tropicaldance.com",
-          "website": "http://www.tropicaldance.com"
-      },
-      "likes": []
+    "placeName": "Animal Care Vet Clinic",
+    "placeType": "Veterinarian",
+    "speciality": "Small Animals",
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@animalcarevet.com",
+      "website": "http://www.animalcarevet.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Amazonas Cafe",
-      "placeType": "Cafe",
-      "location": {
-          "address": "Warschauer Straße 35",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0309988776",
-          "email": "info@amazonascafe.com",
-          "website": "http://www.amazonascafe.com"
-      },
-      "likes": []
+    "placeName": "Pet Health Center",
+    "placeType": "Veterinarian",
+    "speciality": "Exotic Animals",
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305551234",
+      "email": "contact@pethealthcenter.com",
+      "website": "http://www.pethealthcenter.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Capoeira School",
-      "placeType": "Other",
-      "location": {
-          "address": "Kottbusser Damm 95",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0301122334",
-          "email": "info@capoeiraschool.com",
-          "website": "http://www.capoeiraschool.com"
-      },
-      "likes": []
+    "placeName": "Dr. Oliveira's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Pediatrics",
+    "location": {
+      "address": "Wilmersdorfer Straße 120",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "appointments@droliveiraberlin.com",
+      "website": "http://www.droliveiraberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "São Paulo Grill",
-      "placeType": "Restaurant",
-      "location": {
-          "address": "Berliner Straße 18",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0304433221",
-          "email": "contact@saopaulogril.com",
-          "website": "http://www.saopaulogril.com"
-      },
-      "likes": []
+    "placeName": "Happy Pets Vet Clinic",
+    "placeType": "Veterinarian",
+    "speciality": "Surgery",
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0301234567",
+      "email": "contact@happypetsvet.com",
+      "website": "http://www.happypetsvet.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Carnaval Shop",
-      "placeType": "Shop",
-      "location": {
-          "address": "Leipziger Straße 20",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0305544332",
-          "email": "info@carnavalshop.com",
-          "website": "http://www.carnavalshop.com"
-      },
-      "likes": []
+    "placeName": "Dr. Hoffmann's Dental Clinic",
+    "placeType": "Dentist",
+    "speciality": "Orthodontics",
+    "location": {
+      "address": "Unter den Linden 21",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@hoffmanndental.com",
+      "website": "http://www.hoffmanndental.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Brasil Fitness Center",
-      "placeType": "Gym",
-      "location": {
-          "address": "Frankfurter Allee 55",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0306677889",
-          "email": "info@brasilfitness.com",
-          "website": "http://www.brasilfitness.com"
-      },
-      "likes": []
+    "placeName": "Dr. Müller Dental Care",
+    "placeType": "Dentist",
+    "speciality": "Periodontics",
+    "location": {
+      "address": "Alexanderplatz 9",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0301234567",
+      "email": "contact@muellerdentalcare.com",
+      "website": "http://www.muellerdentalcare.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Bossa Nova Records",
-      "placeType": "Shop",
-      "location": {
-          "address": "Oranienstraße 45",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0309988997",
-          "email": "info@bossanovarecords.com",
-          "website": "http://www.bossanovarecords.com"
-      },
-      "likes": []
+    "placeName": "Dental Clinic Berlin",
+    "placeType": "Dentist",
+    "speciality": "General Dentistry",
+    "location": {
+      "address": "Friedrichstraße 55",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "info@dentalclinicberlin.com",
+      "website": "http://www.dentalclinicberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Brasileira Boutique",
-      "placeType": "Shop",
-      "location": {
-          "address": "Schönhauser Allee 130",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0307766554",
-          "email": "info@brasileiraboutique.com",
-          "website": "http://www.brasileiraboutique.com"
-      },
-      "likes": []
+    "placeName": "Dr. Santos Clinic",
+    "placeType": "Doctor",
+    "speciality": "Neurology",
+    "location": {
+      "address": "Kaiser-Wilhelm-Straße 67",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "appointments@drsantosberlin.com",
+      "website": "http://www.drsantosberlin.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Feijoada House",
-      "placeType": "Restaurant",
-      "location": {
-          "address": "Kurfürstenstraße 60",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0302211998",
-          "email": "info@feijoadahouse.com",
-          "website": "http://www.feijoadahouse.com"
-      },
-      "likes": []
+    "placeName": "Dr. Ramos Clinic",
+    "placeType": "Doctor",
+    "speciality": "Oncology",
+    "location": {
+      "address": "Tauentzienstraße 9",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0307654321",
+      "email": "contact@drramosclinic.com",
+      "website": "http://www.drramosclinic.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Pelé's Sports Bar",
-      "placeType": "Bar",
-      "location": {
-          "address": "Brunnenstraße 50",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0308844332",
-          "email": "info@pelessportsbar.com",
-          "website": "http://www.pelessportsbar.com"
-      },
-      "likes": []
+    "placeName": "Tropical Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Friedrichstraße 130",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "contact@tropicalsupermercado.com",
+      "website": "http://www.tropicalsupermercado.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Samba Beauty Salon",
-      "placeType": "Beauty Salon",
-      "location": {
-          "address": "Danziger Straße 123",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0306655443",
-          "email": "info@sambabeauty.com",
-          "website": "http://www.sambabeauty.com"
-      },
-      "likes": []
+    "placeName": "Café do Brasil",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Unter den Linden 75",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0304321098",
+      "email": "contact@cafedobrasil.com",
+      "website": "http://www.cafedobrasil.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Favela Cafe",
-      "placeType": "Cafe",
-      "location": {
-          "address": "Rosa-Luxemburg-Straße 78",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0305544336",
-          "email": "info@favelacafe.com",
-          "website": "http://www.favelacafe.com"
-      },
-      "likes": []
+    "placeName": "Mercado Brasileiro",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Leipziger Straße 16",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "info@mercadobrasileiro.com",
+      "website": "http://www.mercadobrasileiro.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Brasília Travel Agency",
-      "placeType": "Travel Agency",
-      "location": {
-          "address": "Steglitzer Damm 35",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0309988774",
-          "email": "info@brasiltravel.com",
-          "website": "http://www.brasiltravel.com"
-      },
-      "likes": []
+    "placeName": "Bar do João",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Karl-Marx-Straße 45",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "barjoao@berlin.com",
+      "website": "http://www.bardojoao.com"
+    },
+    "likes": []
   },
   {
-      "placeName": "Rio Bakery",
-      "placeType": "Bakery",
-      "location": {
-          "address": "Karl-Liebknecht-Straße 40",
-          "city": "Berlin"
-      },
-      "contact": {
-          "phone": "0303344556",
-          "email": "info@riobakery.com",
-          "website": "http://www.riobakery.com"
-      },
-      "likes": []
+    "placeName": "Churrascaria Brasil",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Tauentzienstraße 9",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0307654321",
+      "email": "contact@churrascariabrasil.com",
+      "website": "http://www.churrascariabrasil.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Açaí Paradise",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Oranienburger Straße 32",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305432167",
+      "email": "info@acaiparadise.com",
+      "website": "http://www.acaiparadise.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Brazilian Food Hub",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Rosenthaler Straße 68",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543219",
+      "email": "contact@brazilianfoodhub.com",
+      "website": "http://www.brazilianfoodhub.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Samba Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Nollendorfplatz 7",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@sambadancestudio.com",
+      "website": "http://www.sambadancestudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Picanha House",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Hackescher Markt 4",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0307654321",
+      "email": "info@picanhahouse.com",
+      "website": "http://www.picanhahouse.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Lapa Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Schönhauser Allee 50",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303456789",
+      "email": "contact@lapasupermercado.com",
+      "website": "http://www.lapasupermercado.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Cantina Carioca",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Frankfurter Allee 100",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309870123",
+      "email": "info@cantinacarioca.com",
+      "website": "http://www.cantinacarioca.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Amazonas Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Brandenburgische Straße 88",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305432109",
+      "email": "info@amazonassupermercado.com",
+      "website": "http://www.amazonassupermercado.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Rio Steakhouse",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Kurfürstenstraße 55",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0304321987",
+      "email": "contact@riosteakhouse.com",
+      "website": "http://www.riosteakhouse.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Bahia Bar",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Kottbusser Damm 80",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "info@bahiabar.com",
+      "website": "http://www.bahiabar.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Mendes Clinic",
+    "placeType": "Doctor",
+    "speciality": "Cardiology",
+    "location": {
+      "address": "Kurfürstendamm 180",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305678901",
+      "email": "appointments@drmendesberlin.com",
+      "website": "http://www.drmendesberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Almeida Dental Clinic",
+    "placeType": "Dentist",
+    "speciality": "Orthodontics",
+    "location": {
+      "address": "Wilmersdorfer Straße 32",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@almeidadental.com",
+      "website": "http://www.almeidadental.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Carioca Café",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Karl-Liebknecht-Straße 23",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "contact@cariocacafe.com",
+      "website": "http://www.cariocacafe.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Souza's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Neurology",
+    "location": {
+      "address": "Müllerstraße 145",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303334567",
+      "email": "appointment@drsouzaberlin.com",
+      "website": "http://www.drsouzaberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Boteco Carioca",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Karl-Marx-Straße 23",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305432109",
+      "email": "contact@botecocarioca.com",
+      "website": "http://www.botecocarioca.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Oliveira's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Pediatrics",
+    "location": {
+      "address": "Wilmersdorfer Straße 120",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "appointments@droliveiraberlin.com",
+      "website": "http://www.droliveiraberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Happy Pets Vet Clinic",
+    "placeType": "Veterinarian",
+    "speciality": "Surgery",
+    "location": {
+      "address": "Friedrichstraße 101",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0301234567",
+      "email": "contact@happypetsvet.com",
+      "website": "http://www.happypetsvet.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Rio Grande Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Frankfurter Allee 234",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "info@riograndesupermercado.com",
+      "website": "http://www.riograndesupermercado.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Amazonia Grill",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Oranienstraße 29",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "contact@amazoniagrill.com",
+      "website": "http://www.amazoniagrill.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Café Tropical",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Kottbusser Damm 40",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0304321098",
+      "email": "info@cafebrasil.com",
+      "website": "http://www.cafebrasil.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Samba Fit Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Nollendorfplatz 8",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "info@sambafitstudio.com",
+      "website": "http://www.sambafitstudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Churrasco House",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Hackescher Markt 7",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "info@churrascohouse.com",
+      "website": "http://www.churrascohouse.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Favela Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Schönhauser Allee 120",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303456789",
+      "email": "contact@favelasupermercado.com",
+      "website": "http://www.favelasupermercado.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Cantina do Chef",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Frankfurter Allee 200",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309870123",
+      "email": "info@cantinadochef.com",
+      "website": "http://www.cantinadochef.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Amazonas Bar",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Brandenburgische Straße 45",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305432109",
+      "email": "info@amazonasbar.com",
+      "website": "http://www.amazonasbar.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Cardoso's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Cardiology",
+    "location": {
+      "address": "Karl-Liebknecht-Straße 88",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305678901",
+      "email": "appointments@drcardosoberlin.com",
+      "website": "http://www.drcardosoberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Lima Dental Clinic",
+    "placeType": "Dentist",
+    "speciality": "Orthodontics",
+    "location": {
+      "address": "Wilmersdorfer Straße 12",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@limadental.com",
+      "website": "http://www.limadental.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Café Tropical",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Karl-Liebknecht-Straße 50",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "contact@cafetropical.com",
+      "website": "http://www.cafetropical.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Souza's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Neurology",
+    "location": {
+      "address": "Müllerstraße 145",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303334567",
+      "email": "appointment@drsouzaberlin.com",
+      "website": "http://www.drsouzaberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Rio de Janeiro Supermercado",
+    "placeType": "Supermarket",
+    "location": {
+      "address": "Friedrichstraße 240",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0306543210",
+      "email": "info@riodejaneirosupermercado.com",
+      "website": "http://www.riodejaneirosupermercado.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Amazonia Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Friedrichstraße 50",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0308765432",
+      "email": "info@amazoniadancestudio.com",
+      "website": "http://www.amazoniadancestudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Favela Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Schönhauser Allee 120",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0303456789",
+      "email": "contact@faveladancestudio.com",
+      "website": "http://www.faveladancestudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Rio de Janeiro Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Frankfurter Allee 150",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309870123",
+      "email": "info@riodejaneirodancestudio.com",
+      "website": "http://www.riodejaneirodancestudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Mendes' Clinic",
+    "placeType": "Doctor",
+    "speciality": "Cardiology",
+    "location": {
+      "address": "Kurfürstendamm 180",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305678901",
+      "email": "appointments@drmendesberlin.com",
+      "website": "http://www.drmendesberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Almeida Dental Clinic",
+    "placeType": "Dentist",
+    "speciality": "Orthodontics",
+    "location": {
+      "address": "Wilmersdorfer Straße 32",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@almeidadental.com",
+      "website": "http://www.almeidadental.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Café do Brasil",
+    "placeType": "Restaurant",
+    "location": {
+      "address": "Unter den Linden 75",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0304321098",
+      "email": "contact@cafedobrasil.com",
+      "website": "http://www.cafedobrasil.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Silva Dental Care",
+    "placeType": "Dentist",
+    "speciality": "General Dentistry",
+    "location": {
+      "address": "Kurfürstendamm 89",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0301234567",
+      "email": "info@silvadentalcare.com",
+      "website": "http://www.silvadentalcare.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Pereira's Clinic",
+    "placeType": "Doctor",
+    "speciality": "Orthopedics",
+    "location": {
+      "address": "Potsdamer Platz 10",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0307654321",
+      "email": "appointments@drpereiraberlin.com",
+      "website": "http://www.drpereiraberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Samba Brasil Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Alexanderplatz 5",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305551234",
+      "email": "contact@sambabrasildancestudio.com",
+      "website": "http://www.sambabrasildancestudio.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Pet Care Vet Clinic",
+    "placeType": "Veterinarian",
+    "speciality": "Dentistry",
+    "location": {
+      "address": "Wittenbergplatz 20",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305432109",
+      "email": "info@petcarevetclinic.com",
+      "website": "http://www.petcarevetclinic.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Dr. Santos' Clinic",
+    "placeType": "Doctor",
+    "speciality": "Neurology",
+    "location": {
+      "address": "Kaiser-Wilhelm-Straße 45",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "appointments@drsantosberlin.com",
+      "website": "http://www.drsantosberlin.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Pet Wellness Vet Clinic",
+    "placeType": "Veterinarian",
+    "speciality": "Surgery",
+    "location": {
+      "address": "Kurfürstendamm 27",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0309876543",
+      "email": "info@petwellnessvet.com",
+      "website": "http://www.petwellnessvet.com"
+    },
+    "likes": []
+  },
+  {
+    "placeName": "Samba Rio Dance Studio",
+    "placeType": "Other",
+    "location": {
+      "address": "Alexanderplatz 10",
+      "city": "Berlin"
+    },
+    "contact": {
+      "phone": "0305551234",
+      "email": "contact@sambariodance.com",
+      "website": "http://www.sambariodance.com"
+    },
+    "likes": []
   }
 ]

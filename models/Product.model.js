@@ -35,6 +35,11 @@ const productSchema = new Schema(
       min: [0, "Price must be a positive number."],
     },
     location: {
+      storeName: {
+        type: String,
+        required: [true, "Location is required."],
+        trim: true,
+      },
       address: {
         type: String,
         required: [true, "Location is required."],
