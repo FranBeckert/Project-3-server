@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const Service = require("../models/Service.model");
+const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
 
 // Post - Creates a new service
-router.post("/", async (request, response) => {
+router.post("/", isAuthenticated,  async (request, response) => {
   try {
     console.log(request.body);
     if (!request.body.providerName) {
@@ -51,11 +52,6 @@ router.post("/", async (request, response) => {
         message: "socialMedia is required!",
       });
     }
-    if (!request.body.likes) {
-      return response.status(400).send({
-        message: "likes is required!",
-      });
-    }
 
     const newService = {
       providerName: request.body.providerName,
@@ -71,7 +67,6 @@ router.post("/", async (request, response) => {
         email: request.body.contact.email,
         socialMedia: request.body.contact.socialMedia,
       },
-      likes: request.body.likes,
     };
 
     const service = await Service.create(newService);
@@ -83,8 +78,6 @@ router.post("/", async (request, response) => {
     response.status(500).send({ message: error.message });
   }
 });
-
-
 
 // Get - Returns all the places
 router.get("/", async (request, response) => {
@@ -115,58 +108,53 @@ router.get("/:id", async (request, response) => {
 });
 
 // Put - Edits/Updates the specified service
-router.put("/:id", async (request, response) => {
+router.put("/:id", isAuthenticated, async (request, response) => {
   try {
     if (!request.body.providerName) {
-        return response.status(400).send({
-          message: "providerName is required!",
-        });
-      }
-      if (!request.body.serviceType) {
-        return response.status(400).send({
-          message: "serviceType is required!",
-        });
-      }
-      if (!request.body.description) {
-        return response.status(400).send({
-          message: "description is required!",
-        });
-      }
-      if (!request.body.price) {
-        return response.status(400).send({
-          message: "price is required!",
-        });
-      }
-      if (!request.body.location.address) {
-        return response.status(400).send({
-          message: "address is required!",
-        });
-      }
-      if (!request.body.location.city) {
-        return response.status(400).send({
-          message: "city is required!",
-        });
-      }
-      if (!request.body.contact.phone) {
-        return response.status(400).send({
-          message: "phone is required!",
-        });
-      }
-      if (!request.body.contact.email) {
-        return response.status(400).send({
-          message: "email is required!",
-        });
-      }
-      if (!request.body.contact.socialMedia) {
-        return response.status(400).send({
-          message: "socialMedia is required!",
-        });
-      }
-      if (!request.body.likes) {
-        return response.status(400).send({
-          message: "likes is required!",
-        });
-      }
+      return response.status(400).send({
+        message: "providerName is required!",
+      });
+    }
+    if (!request.body.serviceType) {
+      return response.status(400).send({
+        message: "serviceType is required!",
+      });
+    }
+    if (!request.body.description) {
+      return response.status(400).send({
+        message: "description is required!",
+      });
+    }
+    if (!request.body.price) {
+      return response.status(400).send({
+        message: "price is required!",
+      });
+    }
+    if (!request.body.location.address) {
+      return response.status(400).send({
+        message: "address is required!",
+      });
+    }
+    if (!request.body.location.city) {
+      return response.status(400).send({
+        message: "city is required!",
+      });
+    }
+    if (!request.body.contact.phone) {
+      return response.status(400).send({
+        message: "phone is required!",
+      });
+    }
+    if (!request.body.contact.email) {
+      return response.status(400).send({
+        message: "email is required!",
+      });
+    }
+    if (!request.body.contact.socialMedia) {
+      return response.status(400).send({
+        message: "socialMedia is required!",
+      });
+    }
 
     const { id } = request.params;
     const result = await Service.findByIdAndUpdate(id, request.body);
@@ -175,7 +163,9 @@ router.put("/:id", async (request, response) => {
       return response.status(404).json({ message: "service not found" });
     }
 
-    return response.status(200).send({ message: "service updated successfully" });
+    return response
+      .status(200)
+      .send({ message: "service updated successfully" });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
@@ -183,7 +173,7 @@ router.put("/:id", async (request, response) => {
 });
 
 // Delete - Deletes the specified service
-router.delete("/:id", async (request, response) => {
+router.delete("/:id", isAuthenticated, async (request, response) => {
   try {
     const { id } = request.params;
 
@@ -193,7 +183,9 @@ router.delete("/:id", async (request, response) => {
       return response.status(404).json({ message: "service not found" });
     }
 
-    return response.status(200).send({ message: "service deleted successfully" });
+    return response
+      .status(200)
+      .send({ message: "service deleted successfully" });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });

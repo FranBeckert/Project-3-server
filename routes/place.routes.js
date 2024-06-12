@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const Place = require("../models/Place.model");
+const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
+
+
 
 // Post - Creates a new place
-router.post("/", async (request, response) => {
+router.post("/", isAuthenticated, async (request, response) => {
   try {
     console.log(request.body);
     if (!request.body.placeName) {
@@ -16,8 +19,12 @@ router.post("/", async (request, response) => {
         message: "placeType is required!",
       });
     }
-    
-    if (request.body.placeType ==="Doctor" || request.body.placeType ==="Veterinarian" || request.body.placeType ==="Dentist") {
+
+    if (
+      request.body.placeType === "Doctor" ||
+      request.body.placeType === "Veterinarian" ||
+      request.body.placeType === "Dentist"
+    ) {
       if (!request.body.speciality) {
         return response.status(400).send({
           message: "speciality is required!",
@@ -51,12 +58,6 @@ router.post("/", async (request, response) => {
       });
     }
 
-    if (!request.body.likes) {
-      return response.status(400).send({
-        message: "likes is required!",
-      });
-    }
-
     const newPlace = {
       placeName: request.body.placeName,
       placeType: request.body.placeType,
@@ -70,7 +71,6 @@ router.post("/", async (request, response) => {
         email: request.body.contact.email,
         website: request.body.contact.website,
       },
-      likes: request.body.likes,
     };
 
     const place = await Place.create(newPlace);
@@ -112,7 +112,7 @@ router.get("/:id", async (request, response) => {
 });
 
 // Put - Edits/Updates the specified place
-router.put("/:id", async (request, response) => {
+router.put("/:id", isAuthenticated,  async (request, response) => {
   try {
     if (!request.body.placeName) {
       return response.status(400).send({
@@ -124,8 +124,12 @@ router.put("/:id", async (request, response) => {
         message: "placeType is required!",
       });
     }
-    
-    if (request.body.placeType ==="Doctor" || request.body.placeType ==="Veterinarian" || request.body.placeType ==="Dentist") {
+
+    if (
+      request.body.placeType === "Doctor" ||
+      request.body.placeType === "Veterinarian" ||
+      request.body.placeType === "Dentist"
+    ) {
       if (!request.body.speciality) {
         return response.status(400).send({
           message: "speciality is required!",
@@ -159,12 +163,6 @@ router.put("/:id", async (request, response) => {
       });
     }
 
-    if (!request.body.likes) {
-      return response.status(400).send({
-        message: "likes is required!",
-      });
-    }
-
     const { id } = request.params;
     const result = await Place.findByIdAndUpdate(id, request.body);
 
@@ -180,7 +178,7 @@ router.put("/:id", async (request, response) => {
 });
 
 // Delete - Deletes the specified place
-router.delete("/:id", async (request, response) => {
+router.delete("/:id", isAuthenticated, async (request, response) => {
   try {
     const { id } = request.params;
 

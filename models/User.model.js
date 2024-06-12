@@ -26,17 +26,13 @@ const userSchema = new Schema(
 
     dateOfBirth: {
       type: Date,
-      required: [true, "Date of Birth is required."],
     },
 
     neighborhood: {
       type: String,
-      required: [true, "Neighborhood is required."],
     },
 
     interests: [String],
-
-    // 3 different favorites FIXME
 
     favoritePlaces: { type: Schema.Types.ObjectId, ref: "Place" },
     favoriteServices: { type: Schema.Types.ObjectId, ref: "Service" },

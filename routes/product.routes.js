@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const Product = require("../models/Product.model");
+const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
 
 // Post - Creates a new product
-router.post("/", async (request, response) => {
+router.post("/", isAuthenticated,  async (request, response) => {
   try {
     console.log(request.body);
     if (!request.body.productName) {
@@ -46,11 +47,6 @@ router.post("/", async (request, response) => {
         message: "city is required!",
       });
     }
-    if (!request.body.likes) {
-      return response.status(400).send({
-        message: "likes is required!",
-      });
-    }
 
     const newProduct = {
       productName: request.body.productName,
@@ -62,8 +58,7 @@ router.post("/", async (request, response) => {
         storeName: request.body.location.storeName,
         address: request.body.location.address,
         city: request.body.location.city,
-      },     
-      likes: request.body.likes,
+      },
     };
 
     const product = await Product.create(newProduct);
@@ -105,53 +100,48 @@ router.get("/:id", async (request, response) => {
 });
 
 // Put - Edits/Updates the specified product
-router.put("/:id", async (request, response) => {
+router.put("/:id", isAuthenticated, async (request, response) => {
   try {
     if (!request.body.productName) {
-        return response.status(400).send({
-          message: "productName is required!",
-        });
-      }
-      if (!request.body.category) {
-        return response.status(400).send({
-          message: "category is required!",
-        });
-      }
-      if (!request.body.brand) {
-        return response.status(400).send({
-          message: "brand is required!",
-        });
-      }
-      if (!request.body.description) {
-        return response.status(400).send({
-          message: "description is required!",
-        });
-      }
-      if (!request.body.price) {
-        return response.status(400).send({
-          message: "price is required!",
-        });
-      }
-      if (!request.body.location.storeName) {
-        return response.status(400).send({
-          message: "address is required!",
-        });
-      }
-      if (!request.body.location.address) {
-        return response.status(400).send({
-          message: "address is required!",
-        });
-      }
-      if (!request.body.location.city) {
-        return response.status(400).send({
-          message: "city is required!",
-        });
-      }
-      if (!request.body.likes) {
-        return response.status(400).send({
-          message: "likes is required!",
-        });
-      }
+      return response.status(400).send({
+        message: "productName is required!",
+      });
+    }
+    if (!request.body.category) {
+      return response.status(400).send({
+        message: "category is required!",
+      });
+    }
+    if (!request.body.brand) {
+      return response.status(400).send({
+        message: "brand is required!",
+      });
+    }
+    if (!request.body.description) {
+      return response.status(400).send({
+        message: "description is required!",
+      });
+    }
+    if (!request.body.price) {
+      return response.status(400).send({
+        message: "price is required!",
+      });
+    }
+    if (!request.body.location.storeName) {
+      return response.status(400).send({
+        message: "address is required!",
+      });
+    }
+    if (!request.body.location.address) {
+      return response.status(400).send({
+        message: "address is required!",
+      });
+    }
+    if (!request.body.location.city) {
+      return response.status(400).send({
+        message: "city is required!",
+      });
+    }
 
     const { id } = request.params;
     const result = await Product.findByIdAndUpdate(id, request.body);
@@ -160,7 +150,9 @@ router.put("/:id", async (request, response) => {
       return response.status(404).json({ message: "product not found" });
     }
 
-    return response.status(200).send({ message: "product updated successfully" });
+    return response
+      .status(200)
+      .send({ message: "product updated successfully" });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
@@ -168,7 +160,7 @@ router.put("/:id", async (request, response) => {
 });
 
 // Delete - Deletes the specified product
-router.delete("/:id", async (request, response) => {
+router.delete("/:id", isAuthenticated, async (request, response) => {
   try {
     const { id } = request.params;
 
@@ -178,7 +170,9 @@ router.delete("/:id", async (request, response) => {
       return response.status(404).json({ message: "product not found" });
     }
 
-    return response.status(200).send({ message: "product deleted successfully" });
+    return response
+      .status(200)
+      .send({ message: "product deleted successfully" });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
