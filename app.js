@@ -21,9 +21,6 @@ require("./config")(app);
 app.use(express.json());
 
 // 👇 Start handling routes here
-const indexRoutes = require("./routes/index.routes");
-app.use("/api", isAuthenticated, indexRoutes);
-
 const authRoutes = require("./routes/auth.routes");
 app.use("/api/auth", isAuthenticated, authRoutes);
 
@@ -35,6 +32,10 @@ app.use("/api/products", productRoutes);
 
 const serviceRoutes = require("./routes/service.routes");
 app.use("/api/services", serviceRoutes);
+
+// order matters
+const indexRoutes = require("./routes/index.routes");
+app.use("/api", isAuthenticated, indexRoutes);
 
 const authRouter = require("./routes/auth.routes");
 app.use("/auth", authRouter);
