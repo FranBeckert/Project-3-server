@@ -33,6 +33,9 @@ app.use("/api/products", productRoutes);
 const serviceRoutes = require("./routes/service.routes");
 app.use("/api/services", serviceRoutes);
 
+const messageRoutes = require("./routes/message.routes");
+app.use("/api/messages",  messageRoutes);
+
 // order matters
 const indexRoutes = require("./routes/index.routes");
 app.use("/api", isAuthenticated, indexRoutes);
