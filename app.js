@@ -34,7 +34,10 @@ const serviceRoutes = require("./routes/service.routes");
 app.use("/api/services", serviceRoutes);
 
 const messageRoutes = require("./routes/message.routes");
-app.use("/api/messages",  messageRoutes);
+app.use("/api/messages", isAuthenticated, messageRoutes);
+
+const userRoutes = require("./routes/user.routes");
+app.use("/api/users", isAuthenticated, userRoutes);
 
 // order matters
 const indexRoutes = require("./routes/index.routes");

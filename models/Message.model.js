@@ -17,12 +17,6 @@ const messageSchema = new Schema(
       trim: true,
       required: [true, "Message is required."],
     },
-
-    // Mongoose sets it automatically when created.
-    date: {
-      type: Date,
-      default: Date.now,
-    },
   },
 
   {
