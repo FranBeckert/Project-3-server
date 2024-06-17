@@ -126,57 +126,57 @@ router.get("/verify", isAuthenticated, (req, res, next) => {
 });
 
 
-// PUT  /auth/profile
-router.put("/profile/:id", isAuthenticated, async (req, res, next) => {
-  // Get the keys of the properties sent in the request body
-  const updates = Object.keys(req.body);
+// // PUT  /auth/profile
+// router.put("/profile/:id", isAuthenticated, async (req, res, next) => {
+//   // Get the keys of the properties sent in the request body
+//   const updates = Object.keys(req.body);
 
-  // Define which fields are allowed to be updated
-  const allowedUpdates = [
-    "name",
-    "email",
-    "profilePicture",
-    "dateOfBirth",
-    "neighborhood",
-    "interests",
-    "favoritePlaces",
-    "favoriteServices",
-    "favoritesProduct",
-  ];
+//   // Define which fields are allowed to be updated
+//   const allowedUpdates = [
+//     "name",
+//     "email",
+//     "profilePicture",
+//     "dateOfBirth",
+//     "neighborhood",
+//     "interests",
+//     "favoritePlaces",
+//     "favoriteServices",
+//     "favoritesProduct",
+//   ];
 
-  // Check if all fields in the request body are allowed to be updated
-  const isValidOperation = updates.every((update) =>
-    allowedUpdates.includes(update)
-  );
+//   // Check if all fields in the request body are allowed to be updated
+//   const isValidOperation = updates.every((update) =>
+//     allowedUpdates.includes(update)
+//   );
 
-  // If any field is not allowed, return a 400 error
-  if (!isValidOperation) {
-    return res.status(400).send({ error: "Invalid updates!" });
-  }
+//   // If any field is not allowed, return a 400 error
+//   if (!isValidOperation) {
+//     return res.status(400).send({ error: "Invalid updates!" });
+//   }
 
-  try {
-    // Find the user by ID
-    const user = await User.findById(req.payload._id);
+//   try {
+//     // Find the user by ID
+//     const user = await User.findById(req.payload._id);
 
-    // If user not found, return a 404 error
-    if (!user) {
-      return res.status(404).send();
-    }
+//     // If user not found, return a 404 error
+//     if (!user) {
+//       return res.status(404).send();
+//     }
 
-    // Update only the fields provided in the request body
-    updates.forEach((update) => {
-      user[update] = req.body[update];
-    });
+//     // Update only the fields provided in the request body
+//     updates.forEach((update) => {
+//       user[update] = req.body[update];
+//     });
 
-    // Save the updated user
-    await user.save();
+//     // Save the updated user
+//     await user.save();
 
-    // Return a success message with the updated user
-    res.status(200).send({ message: "Updated successfully", user });
-  } catch (error) {
-    res.status(400).send({ message: error.message });
-  }
-});
+//     // Return a success message with the updated user
+//     res.status(200).send({ message: "Updated successfully", user });
+//   } catch (error) {
+//     res.status(400).send({ message: error.message });
+//   }
+// });
 
 
 module.exports = router;
