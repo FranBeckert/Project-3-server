@@ -29,17 +29,19 @@ const userSchema = new Schema(
 
     dateOfBirth: {
       type: Date,
+      default:null,
     },
 
     neighborhood: {
       type: String,
+      default:null,
     },
 
     interests: [String],
 
-    favoritePlaces: { type: Schema.Types.ObjectId, ref: "Place" },
-    favoriteServices: { type: Schema.Types.ObjectId, ref: "Service" },
-    favoritesProduct: { type: Schema.Types.ObjectId, ref: "Product" },
+    favoritePlaces: [{ type: Schema.Types.ObjectId, ref: "Place" }],
+    favoriteServices: [{ type: Schema.Types.ObjectId, ref: "Service" }],
+    favoritesProduct: [{ type: Schema.Types.ObjectId, ref: "Product" }],
   },
 
   {
