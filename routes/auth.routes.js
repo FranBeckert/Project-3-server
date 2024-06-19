@@ -115,14 +115,22 @@ router.post("/login", (req, res, next) => {
 });
 
 // GET  /auth/verify
-router.get("/verify", isAuthenticated, (req, res, next) => {
+router.get("/verify", isAuthenticated, async(req, res, next) => {
   // If JWT token is valid the payload gets decoded by the
   // isAuthenticated middleware and made available on `req.payload`
   console.log(`req.payload`, req.payload);
+  try {
+    const user = await User.findOne({_id: req.payload._id}).select("-password");
 
-  // Send back the object with user data
-  // previously set as the token payload
-  res.status(200).json(req.payload);
+    if(!user) {
+      return res.status(404).json({message: "User not found"})
+    }
+
+    return res.status(200).json(user);
+  } catch (error) {
+    console.log(error.message);
+    response.status(500).send({ message: error.message });
+  }
 });
 
 
