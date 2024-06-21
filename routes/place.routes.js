@@ -71,6 +71,7 @@ router.post("/", isAuthenticated, async (request, response) => {
         email: request.body.contact.email,
         website: request.body.contact.website,
       },
+      createdBy: request.payload._id,
     };
 
     const place = await Place.create(newPlace);

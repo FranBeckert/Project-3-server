@@ -67,6 +67,7 @@ router.post("/", isAuthenticated,  async (request, response) => {
         email: request.body.contact.email,
         socialMedia: request.body.contact.socialMedia,
       },
+      createdBy: request.payload._id,
     };
 
     const service = await Service.create(newService);

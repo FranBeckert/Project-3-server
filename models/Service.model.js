@@ -59,6 +59,8 @@ const serviceSchema = new Schema(
       },
     },
     likes: [{ type: Schema.Types.ObjectId, ref: "User" }],
+
+    createdBy: { type: Schema.Types.ObjectId, ref: "User" },
   },
 
   {

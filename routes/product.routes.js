@@ -22,11 +22,7 @@ router.post("/", isAuthenticated,  async (request, response) => {
         message: "brand is required!",
       });
     }
-    if (!request.body.description) {
-      return response.status(400).send({
-        message: "description is required!",
-      });
-    }
+   
     if (!request.body.price) {
       return response.status(400).send({
         message: "price is required!",
@@ -57,8 +53,9 @@ router.post("/", isAuthenticated,  async (request, response) => {
       location: {
         storeName: request.body.location.storeName,
         address: request.body.location.address,
-        city: request.body.location.city,
+        city: request.body.location.city,        
       },
+      createdBy: request.payload._id,
     };
 
     const product = await Product.create(newProduct);
@@ -117,11 +114,7 @@ router.put("/:id", isAuthenticated, async (request, response) => {
         message: "brand is required!",
       });
     }
-    if (!request.body.description) {
-      return response.status(400).send({
-        message: "description is required!",
-      });
-    }
+    
     if (!request.body.price) {
       return response.status(400).send({
         message: "price is required!",
@@ -129,7 +122,7 @@ router.put("/:id", isAuthenticated, async (request, response) => {
     }
     if (!request.body.location.storeName) {
       return response.status(400).send({
-        message: "address is required!",
+        message: "Name of the store is required!",
       });
     }
     if (!request.body.location.address) {

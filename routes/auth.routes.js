@@ -129,7 +129,7 @@ router.get("/verify", isAuthenticated, async(req, res, next) => {
     return res.status(200).json(user);
   } catch (error) {
     console.log(error.message);
-    response.status(500).send({ message: error.message });
+    res.status(500).send({ message: error.message });
   }
 });
 

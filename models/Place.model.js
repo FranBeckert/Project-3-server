@@ -10,12 +10,23 @@ const placeSchema = new Schema(
     placeType: {
       type: String,
       required: [true, "Type of place is required."],
-      enum: ["Restaurant", "Supermarket", "Doctor", "Veterinarian", "Dentist", "Other"],
+      enum: [
+        "Restaurant",
+        "Supermarket",
+        "Doctor",
+        "Veterinarian",
+        "Dentist",
+        "Other",
+      ],
     },
     speciality: {
       type: String,
       required: function () {
-        return this.placeType === "Doctor" || this.placeType === "Veterinarian" || this.placeType === "Dentist";
+        return (
+          this.placeType === "Doctor" ||
+          this.placeType === "Veterinarian" ||
+          this.placeType === "Dentist"
+        );
       },
       trim: true,
     },
@@ -56,6 +67,8 @@ const placeSchema = new Schema(
       },
     },
     likes: [{ type: Schema.Types.ObjectId, ref: "User" }],
+
+    createdBy: { type: Schema.Types.ObjectId, ref: "User" },
   },
   {
     timestamps: true,
