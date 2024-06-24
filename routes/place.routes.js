@@ -1,9 +1,49 @@
 const express = require("express");
 const router = express.Router();
 const Place = require("../models/Place.model");
-const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
+const { isAuthenticated } = require("./../middleware/jwt.middleware.js");
+const User = require("../models/User.model");
 
+// Post - Like button
+router.post("/like/:id", isAuthenticated, async (req, res) => {
+  try {
+    const placeId = req.params.id;
+    const userId = req.payload._id;
 
+    const place = await Place.findById(placeId);
+    if (!place) {
+      return res.status(404).json({ message: "Place not found" });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    const liked = place.likes.includes(userId);
+    console.log({ liked });
+    if (liked) {
+      // remove place and user
+      place.likes = place.likes.filter(
+        (id) => id.toString() !== userId.toString()
+      );
+      user.favoritePlaces = user.favoritePlaces.filter(
+        (id) => id.toString() !== placeId.toString()
+      );
+    } else {
+      // add place and user
+      place.likes.push(userId);
+      user.favoritePlaces.push(placeId);
+    }
+
+    // saves the changes in the DB
+    await place.save();
+    await user.save();
+    res.json({ ...place._doc, liked: !liked });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 // Post - Creates a new place
 router.post("/", isAuthenticated, async (request, response) => {
@@ -113,7 +153,7 @@ router.get("/:id", async (request, response) => {
 });
 
 // Put - Edits/Updates the specified place
-router.put("/:id", isAuthenticated,  async (request, response) => {
+router.put("/:id", isAuthenticated, async (request, response) => {
   try {
     if (!request.body.placeName) {
       return response.status(400).send({

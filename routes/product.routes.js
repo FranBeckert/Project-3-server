@@ -2,6 +2,50 @@ const express = require("express");
 const router = express.Router();
 const Product = require("../models/Product.model");
 const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
+const User = require("../models/User.model");
+
+
+
+// Post - Like button
+router.post("/like/:id", isAuthenticated, async (req, res) => {
+  try {
+    const productId = req.params.id;
+    const userId = req.payload._id;
+
+    const product = await Product.findById(productId);
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    const liked = product.likes.includes(userId);
+    console.log({ liked });
+    if (liked) {
+      // remove product and user
+      product.likes = product.likes.filter(
+        (id) => id.toString() !== userId.toString()
+      );
+      user.favoritesProducts = user.favoritesProducts.filter(
+        (id) => id.toString() !== productId.toString()
+      );
+    } else {
+      // add product and user
+      product.likes.push(userId);
+      user.favoritesProducts.push(productId);
+    }
+
+    // saves the changes in the DB
+    await product.save();
+    await user.save();
+    res.json({ ...product._doc, liked: !liked });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 // Post - Creates a new product
 router.post("/", isAuthenticated,  async (request, response) => {

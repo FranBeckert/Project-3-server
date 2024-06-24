@@ -5,6 +5,7 @@ const router = express.Router();
 const User = require("../models/User.model");
 
 
+
 // router.post("/", async (request, response) => {
 //   try {
 //     console.log(request.body);
@@ -57,7 +58,6 @@ const User = require("../models/User.model");
 //   }
 // });
 
-
 // Get - Return all the users
 router.get("/", async (request, response) => {
   try {
@@ -85,6 +85,31 @@ router.get("/:id", async (request, response) => {
   }
 });
 
+// get - Returns the likes
+router.get("/likes", async (req, res) => {
+  try {
+    const userId = request.payload._id;
+    const user = await User.findById(userId)
+    .populate("favoritePlaces")
+    .populate("favoriteServices")
+    .populate("favoritesProducts")
+
+    if (!user) {
+      res.status(404).json({ message: "User not found"});
+    }
+    const likes = {
+      places: user.favoritePlaces,
+      services: user.favoriteServices,
+      products: user.favoritesProducts,
+    }
+    res.json(likes)
+
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).send({ message: error.message });
+  }
+});
+
 // Put - Edits/Updates an specific message
 router.put("/:id", async (request, response) => {
   try {
@@ -97,7 +122,7 @@ router.put("/:id", async (request, response) => {
       return response.status(400).send({
         message: "Receiver is required!",
       });
-    }  
+    }
 
     const { id } = request.params;
     const result = await User.findByIdAndUpdate(id, request.body);
@@ -106,9 +131,7 @@ router.put("/:id", async (request, response) => {
       return response.status(404).json({ message: "User not found" });
     }
 
-    return response
-      .status(200)
-      .send({ message: "User updated successfully" });
+    return response.status(200).send({ message: "User updated successfully" });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });

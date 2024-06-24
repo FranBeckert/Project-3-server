@@ -2,6 +2,51 @@ const express = require("express");
 const router = express.Router();
 const Service = require("../models/Service.model");
 const { isAuthenticated } = require("./../middleware/jwt.middleware.js"); 
+const User = require("../models/User.model");
+
+
+// Post - Like button
+router.post("/like/:id", isAuthenticated, async (req, res) => {
+  try {
+    const serviceId = req.params.id;
+    const userId = req.payload._id;
+
+    const service = await Service.findById(serviceId);
+    if (!service) {
+      return res.status(404).json({ message: "Service not found" });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // toggle the "like" feature 
+    const liked = service.likes.includes(userId);
+    console.log({ liked });
+    if (liked) {
+      // remove service and user´s like
+      service.likes = service.likes.filter(
+        (id) => id.toString() !== userId.toString()
+      );
+      user.favoritesProducts = user.favoritesProducts.filter(
+        (id) => id.toString() !== serviceId.toString()
+      );
+    } else {
+      // add service and user´s like
+      service.likes.push(userId);
+      user.favoritesProducts.push(serviceId);
+    }
+
+    // saves the changes in the DB
+    await service.save();
+    await user.save();
+    res.json({ ...service._doc, liked: !liked });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 
 // Post - Creates a new service
 router.post("/", isAuthenticated,  async (request, response) => {

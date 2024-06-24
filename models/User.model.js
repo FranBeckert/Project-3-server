@@ -41,7 +41,7 @@ const userSchema = new Schema(
 
     favoritePlaces: [{ type: Schema.Types.ObjectId, ref: "Place" }],
     favoriteServices: [{ type: Schema.Types.ObjectId, ref: "Service" }],
-    favoritesProduct: [{ type: Schema.Types.ObjectId, ref: "Product" }],
+    favoritesProducts: [{ type: Schema.Types.ObjectId, ref: "Product" }],
   },
 
   {
