@@ -3,60 +3,27 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User.model");
+// ********* require fileUploader in order to use it *********
+const fileUploader = require("../config/cloudinary.config");
+
+ 
+// POST "/api/upload" => Route that receives the image, sends it to Cloudinary via the fileUploader and returns the image URL
+router.post("/upload", fileUploader.single("profilePicture"), (req, res, next) => {
+  // console.log("file is: ", req.file)
+ 
+  if (!req.file) {
+    next(new Error("No file uploaded!"));
+    return;
+  }
+  
+  // Get the URL of the uploaded file and send it as a response.
+  // 'fileUrl' can be any name, just make sure you remember to use the same when accessing it on the frontend
+  
+  res.json({ fileUrl: req.file.path });
+});
 
 
 
-// router.post("/", async (request, response) => {
-//   try {
-//     console.log(request.body);
-//     if (!request.body.name) {
-//       return response.status(400).send({
-//         message: "Name is required!",
-//       });
-//     }
-//     if (!request.body.email) {
-//       return response.status(400).send({
-//         message: "Email is required!",
-//       });
-//     }
-//     if (!request.body.profilePicture) {
-//       return response.status(400).send({
-//         message: "ProfilePicture is required!",
-//       });
-//     }
-//     if (!request.body.dateOfBirth) {
-//       return response.status(400).send({
-//         message: "Date of Birth is required!",
-//       });
-//     }
-//     if (!request.body.neighborhood) {
-//       return response.status(400).send({
-//         message: "Neighborhood is required!",
-//       });
-//     }
-//     if (!request.body.interests) {
-//       return response.status(400).send({
-//         message: "Interests is required!",
-//       });
-//     }
-
-//     const newProfile = {
-//       name: request.body.name,
-//       email: request.body.email,
-//       profilePicture: request.body.profilePicture,
-//       dateOfBirth: request.body.dateOfBirth,
-//       neighborhood: request.body.neighborhood,
-//       interests: request.body.interests,
-//     };
-
-//     const profile = await Profile.create(newProfile);
-
-//     return response.status(201).send(profile);
-//   } catch (error) {
-//     console.log(error.message);
-//     response.status(500).send({ message: error.message });
-//   }
-// });
 
 // Get - Return all the users
 router.get("/", async (request, response) => {
