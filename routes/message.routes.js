@@ -33,29 +33,11 @@ router.post("/", async (request, response) => {
   }
 });
 
-// Get - Return message which are either received or sent by the current login user
-router.get("/", async (request, response) => {
-  try {
-    const userId = request.payload._id;
-    console.log (userId)    
-    const messages = await Message.find({
-      $or: [{sender: userId}, {receiver: userId}]
-    });
-
-    return response.status(200).json({
-      data: messages,
-    });
-  } catch (error) {
-    console.log(error.message);
-    response.status(500).send({ message: error.message });
-  }
-});
-
-
 // Get messages between two users
-router.get('/:userId1/:userId2', async (req, res) => {
+router.get("/:userId2", async (req, res) => {
   try {
-    const { userId1, userId2 } = req.params;
+    const userId1 = req.payload._id;
+    const { userId2 } = req.params;
     const messages = await Message.find({
       $or: [
         { sender: userId1, receiver: userId2 },
@@ -67,8 +49,6 @@ router.get('/:userId1/:userId2', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
-
 
 // // Put - Edits/Updates an specific message
 // router.put("/:id", async (request, response) => {
@@ -124,6 +104,5 @@ router.get('/:userId1/:userId2', async (req, res) => {
 //     response.status(500).send({ message: error.message });
 //   }
 // });
-
 
 module.exports = router;

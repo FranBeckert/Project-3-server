@@ -72,7 +72,7 @@ router.get("/", async (request, response) => {
   }
 });
 
-// Get - Returns an specific message
+// Get - Returns an specific user
 router.get("/:id", async (request, response) => {
   try {
     const { id } = request.params;
@@ -110,7 +110,7 @@ router.get("/likes", async (req, res) => {
   }
 });
 
-// Put - Edits/Updates an specific message
+// Put - Edits/Updates an specific user
 router.put("/:id", async (request, response) => {
   try {
     if (!request.body.name) {
@@ -138,7 +138,7 @@ router.put("/:id", async (request, response) => {
   }
 });
 
-// Delete - Deletes an specific message
+// Delete - Deletes an specific user
 router.delete("/:id", async (request, response) => {
   try {
     const { id } = request.params;
