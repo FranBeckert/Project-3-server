@@ -1,4 +1,4 @@
-# **Brazilian app-project-3** 
+# **Brazilian-app project-3** 
 ### This is the third project I did during the Ironhack bootcamp
 ---
 
