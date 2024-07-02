@@ -38,11 +38,15 @@ router.get("/:userId2", async (req, res) => {
   try {
     const userId1 = req.payload._id;
     const { userId2 } = req.params;
+
+    // find messages from just these two users
     const messages = await Message.find({
       $or: [
         { sender: userId1, receiver: userId2 },
         { sender: userId2, receiver: userId1 },
       ],
+
+      // // Sort the messages in ascending order based on their creation time
     }).sort({ createdAt: 1 });
     res.status(200).json(messages);
   } catch (error) {
